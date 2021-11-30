@@ -203,23 +203,23 @@ export DEPLOY_DIR=${DEPLOY_DIR:-"${BASE_DIR}/deploy"}
 export DEPLOY_ZIP="${DEPLOY_ZIP:-1}"
 export LOG_FILE="${WORK_DIR}/build.log"
 
-export TARGET_HOSTNAME=${TARGET_HOSTNAME:-raspberrypi}
+export TARGET_HOSTNAME=${TARGET_HOSTNAME:-orangepi}
 
-export FIRST_USER_NAME=${FIRST_USER_NAME:-pi}
-export FIRST_USER_PASS=${FIRST_USER_PASS:-raspberry}
+export FIRST_USER_NAME=${FIRST_USER_NAME:-pilled}
+export FIRST_USER_PASS=${FIRST_USER_PASS:-orange}
 export RELEASE=${RELEASE:-bullseye}
 export WPA_ESSID
 export WPA_PASSWORD
 export WPA_COUNTRY
-export ENABLE_SSH="${ENABLE_SSH:-0}"
+export ENABLE_SSH="${ENABLE_SSH:-1}" # Default enable SSH
 export PUBKEY_ONLY_SSH="${PUBKEY_ONLY_SSH:-0}"
 
-export LOCALE_DEFAULT="${LOCALE_DEFAULT:-en_GB.UTF-8}"
+export LOCALE_DEFAULT="${LOCALE_DEFAULT:-en_US.UTF-8}"
 
-export KEYBOARD_KEYMAP="${KEYBOARD_KEYMAP:-gb}"
-export KEYBOARD_LAYOUT="${KEYBOARD_LAYOUT:-English (UK)}"
+export KEYBOARD_KEYMAP="${KEYBOARD_KEYMAP:-us}"
+export KEYBOARD_LAYOUT="${KEYBOARD_LAYOUT:-English (US)}"
 
-export TIMEZONE_DEFAULT="${TIMEZONE_DEFAULT:-Europe/London}"
+export TIMEZONE_DEFAULT="${TIMEZONE_DEFAULT:-Europe/Amsterdam}"
 
 export GIT_HASH=${GIT_HASH:-"$(git rev-parse HEAD)"}
 
